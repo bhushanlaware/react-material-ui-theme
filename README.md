@@ -18,11 +18,6 @@
     // your comoponents
     </AppThemeProvider>```
    ````
-   
-| Parameter | Type | Description | Options |
-| --- | --- | --- |---|
-| defaultColorPalette | String | Default color palette of your site. You can use color palette provided in options as default color palette for your site | `Green yellow, Blue pink, Pink purple, Cyon yellow, Purple orange, Red blue`" 
-| defaultThemeMode | String | Default theme mode of your site. You can use theme mode provided in options as default theme for your site | ` darkblue, dark, light`
 
 2. Add theme controller anywhere in your app to change theme and color
    ```javascript
@@ -33,6 +28,11 @@
    // Provide the both theme toggler and color palette
    <ThemeController />
    ```
+   
+| Parameter | Type | Description | Options |
+| --- | --- | --- |---|
+| defaultColorPalette | String | Default color palette of your site. You can use color palette provided in options as default color palette for your site | `Green yellow, Blue pink, Pink purple, Cyon yellow, Purple orange, Red blue`" 
+| defaultThemeMode | String | Default theme mode of your site. You can use theme mode provided in options as default theme for your site | ` darkblue, dark, light`
 
 ### Example
 
