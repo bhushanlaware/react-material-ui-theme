@@ -10,6 +10,7 @@
 1. Wrap your component with `AppThemeProvider`
 
    ````javascript
+   
    <AppThemeProvider
     defaultColorPalette="Green yellow"
      defaultThemeMode="darkblue"
@@ -17,6 +18,11 @@
     // your comoponents
     </AppThemeProvider>```
    ````
+   
+| Parameter | Type | Description | Options |
+| --- | --- | --- |---|
+| defaultColorPalette | String | Default color palette of your site. You can use color palette provided in options as default color palette for your site | `Green yellow, Blue pink, Pink purple, Cyon yellow, Purple orange, Red blue`" 
+| defaultThemeMode | String | Default theme mode of your site. You can use theme mode provided in options as default theme for your site | ` darkblue, dark, light`
 
 2. Add theme controller anywhere in your app to change theme and color
    ```javascript
@@ -44,6 +50,7 @@
 </AppThemeProvider>
 ```
 ####  Demo https://advance-noteapd-v2.vercel.app/
+#### `Note: works only on material ui components!`
+#####  ``Please raise issue if you want add any feature like adding custom color palette or autocalculate secondary color.``
  
 
-#### `Note: works only on material ui components!`
