@@ -19,5 +19,20 @@
     "react-dom": "17.0.2",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhushanlaware/react-material-ui-theme.git"
+  },
+  "keywords": [
+    "React",
+    "material-Ui",
+    "theme",
+    "multitheme"
+  ],
+  "bugs": {
+    "url": "https://github.com/bhushanlaware/react-material-ui-theme/issues"
+  },
+  "homepage": "https://github.com/bhushanlaware/react-material-ui-theme#readme"
 }
