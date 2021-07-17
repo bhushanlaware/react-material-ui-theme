@@ -5,9 +5,7 @@
   ThemeController,
 } from "react-material-ui-theme";
 ```
-### It use locolstorage to remeeber last theme and color of site.You can apply theme to your react material ui app in 2 easy steps
-
-#### `Note: works on only material ui components only!`
+### It use locolstorage to remember last theme and color of site. You can apply theme to your any react material ui app in 2 easy steps
 
 1. Wrap your component with `AppThemeProvider`
 
@@ -46,3 +44,4 @@
 </AppThemeProvider>
 ```
 
+#### `Note: works on only material ui components only!`
