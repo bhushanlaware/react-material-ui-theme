@@ -46,4 +46,4 @@
 ####  Demo https://advance-noteapd-v2.vercel.app/
  
 
-#### `Note: works on only material ui components only!`
+#### `Note: works only on material ui components!`
