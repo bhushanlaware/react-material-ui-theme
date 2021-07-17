@@ -1,15 +1,16 @@
-import
-  {
-    Box,
-    Button,
-    createMuiTheme,
-    CssBaseline, Grid, IconButton,
-    Menu,
-    MenuItem,
-    Paper,
-    ThemeProvider,
-    Tooltip
-  } from "@material-ui/core";
+import {
+  Box,
+  Button,
+  createMuiTheme,
+  CssBaseline,
+  Grid,
+  IconButton,
+  Menu,
+  MenuItem,
+  Paper,
+  ThemeProvider,
+  Tooltip,
+} from "@material-ui/core";
 import DarkIcon from "@material-ui/icons/Brightness4";
 import DarkIcon2 from "@material-ui/icons/Brightness5";
 import LightIcon from "@material-ui/icons/Brightness7";
@@ -18,7 +19,7 @@ import React, {
   useContext,
   useEffect,
   useMemo,
-  useState
+  useState,
 } from "react";
 import BluePink from "./theme/BluePink";
 import CyonYellow from "./theme/CyonYellow";
@@ -43,9 +44,15 @@ const ColorPaletteContext = React.createContext([]);
 export const useThemeType = () => useContext(ThemeContext);
 export const useColorPalette = () => useContext(ColorPaletteContext);
 
-export const AppThemeProvider = ({ children, defaultThemeMode,defaultColorPalette }) => {
+export const AppThemeProvider = ({
+  children,
+  defaultThemeMode,
+  defaultColorPalette,
+}) => {
   const [themeType, setThemeType] = useState(defaultThemeMode || themeTypes[0]);
-  const defaultColorPaletteObj = defaultColorPalette || colorPalettes[0];
+  const defaultColorPaletteObj =
+    colorPalettes.find((x) => x.title === defaultColorPalette) ||
+    colorPalettes[0];
   const [colorPalette, setColorPalette] = useState(defaultColorPaletteObj);
 
   useEffect(() => {
@@ -158,10 +165,7 @@ export const ThemeColorPalette = ({ type }) => {
         ))
       ) : (
         <Fragment>
-          <IconButton
-            style={buttonStyles(colorPalette)}
-            onClick={handleClick}
-          >
+          <IconButton style={buttonStyles(colorPalette)} onClick={handleClick}>
             {" "}
           </IconButton>
           <Menu

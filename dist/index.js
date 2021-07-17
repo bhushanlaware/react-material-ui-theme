@@ -85,7 +85,7 @@ const AppThemeProvider = _ref => {
     defaultColorPalette
   } = _ref;
   const [themeType, setThemeType] = (0, _react.useState)(defaultThemeMode || themeTypes[0]);
-  const defaultColorPaletteObj = defaultColorPalette || colorPalettes[0];
+  const defaultColorPaletteObj = colorPalettes.find(x => x.title === defaultColorPalette) || colorPalettes[0];
   const [colorPalette, setColorPalette] = (0, _react.useState)(defaultColorPaletteObj);
   (0, _react.useEffect)(() => {
     const localThemeType = localStorage.getItem("ThemeType");

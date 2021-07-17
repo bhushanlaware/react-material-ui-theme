@@ -1,7 +1,7 @@
 {
   "name": "react-material-ui-theme",
-  "version": "1.0.1",
-  "description": "Add multicolor and dark theme to your project instantly.",
+  "version": "1.0.5",
+  "description": "Add multicolor and dark theme to your react material ui project instantly.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
