@@ -1,16 +1,17 @@
 ```javascript
-  import import AppThemeProvider, {
+import AppThemeProvider, {
   ThemeColorPalette,
   ThemeTogglerButton,
   ThemeController,
 } from "react-material-ui-theme";
 ```
+
 ### It use locolstorage to remember last theme and color of site. You can apply theme to your any react material ui app in 2 easy steps
 
 1. Wrap your component with `AppThemeProvider`
 
    ````javascript
-   
+
    <AppThemeProvider
     defaultColorPalette="Green yellow"
      defaultThemeMode="darkblue"
@@ -28,11 +29,31 @@
    // Provide the both theme toggler and color palette
    <ThemeController />
    ```
-   
-| Parameter | Type | Description | Options |
-| --- | --- | --- |---|
-| defaultColorPalette | String | Default color palette of your site. You can use color palette provided in options as default color palette for your site | `Green yellow, Blue pink, Pink purple, Cyon yellow, Purple orange, Red blue`" 
-| defaultThemeMode | String | Default theme mode of your site. You can use theme mode provided in options as default theme for your site | ` darkblue, dark, light`
+
+### AppThemeProvider API
+
+| Parameter           | Type   | Description                                                                                                              | Options                                                                       |
+| ------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| defaultColorPalette | String | Default color palette of your site. You can use color palette provided in options as default color palette for your site | `Green yellow, Blue pink, Pink purple, Cyon yellow, Purple orange, Red blue`" |
+| defaultThemeMode    | String | Default theme mode of your site. You can use theme mode provided in options as default theme for your site               | ` darkblue, dark, light`                                                      |
+
+### Hooks API
+
+1. use `useThemeType` hook to get theme type
+
+```javascript
+const [themeType, setThemeType] = useThemeType();
+setThemeType("light");
+console.log(themeType); // returns light)
+```
+
+2. use `useColorPalette` hook to get color palette
+
+```javascript
+const [colorPalette, setColorPalette] = useColorPalette();
+setColorPalette("Blue pink");
+console.log(colorPalette); // returns Blue pink
+```
 
 ### Example
 
@@ -49,8 +70,9 @@
   <ThemeController />
 </AppThemeProvider>
 ```
-####  Demo https://advance-noteapd-v2.vercel.app/
-#### `Note: works only on material ui components!`
-#####  ``Please raise issue if you want add any feature like adding custom color palette or autocalculate secondary color.``
- 
 
+#### Demo https://advance-noteapd-v2.vercel.app/
+
+#### `Note: works only on material ui components!`
+
+##### `Please raise issue if you want add any feature like adding custom color palette or autocalculate secondary color.`
