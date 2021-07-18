@@ -16,7 +16,7 @@ yarn add react-material-ui-theme
 ```
 ## Usage
 
-### You can apply theme to your any react material ui app in 2 easy steps
+You can apply theme to your any react material ui app in 2 easy steps
 
 ```javascript
 import AppThemeProvider, {
@@ -48,32 +48,6 @@ import AppThemeProvider, {
    // Provide the both theme toggler and color palette
    <ThemeController />
    ```
-
-### AppThemeProvider API
-
-| Parameter           | Type   | Description                                                                                                              | Options                                                                       |
-| ------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
-| defaultColorPalette | String | Default color palette of your site. You can use color palette provided in options as default color palette for your site | `Green yellow, Blue pink, Pink purple, Cyon yellow, Purple orange, Red blue`" |
-| defaultThemeMode    | String | Default theme mode of your site. You can use theme mode provided in options as default theme for your site               | ` darkblue, dark, light`                                                      |
-
-### Hooks API
-
-1. use `useThemeType` hook to get theme type
-
-```javascript
-const [themeType, setThemeType] = useThemeType();
-setThemeType("light");
-console.log(themeType); // returns light)
-```
-
-2. use `useColorPalette` hook to get color palette
-
-```javascript
-const [colorPalette, setColorPalette] = useColorPalette();
-setColorPalette("Blue pink");
-console.log(colorPalette); // returns Blue pink
-```
-
 ### Example
 
 ```javascript
@@ -89,9 +63,39 @@ console.log(colorPalette); // returns Blue pink
   <ThemeController />
 </AppThemeProvider>
 ```
+### AppThemeProvider API
+
+| Parameter           | Type   | Description                                                                                                              | Options                                                                       |
+| ------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| defaultColorPalette | String | Default color palette of your site. You can use color palette provided in options as default color palette for your site | `Green yellow, Blue pink, Pink purple, Cyon yellow, Purple orange, Red blue`" |
+| defaultThemeMode    | String | Default theme mode of your site. You can use theme mode provided in options as default theme for your site               | ` darkblue, dark, light`                                                      |
+
+### Hooks API
+
+1. use `useThemeType` hook to get theme type
+
+```javascript
+import { useThemeType } from "react-material-ui-theme";
+
+const [themeType, setThemeType] = useThemeType();
+setThemeType("light");
+console.log(themeType); // returns light)
+```
+
+2. use `useColorPalette` hook to get color palette
+
+```javascript
+import { useColorPalette } from "react-material-ui-theme";
+
+const [colorPalette, setColorPalette] = useColorPalette();
+setColorPalette("Blue pink");
+console.log(colorPalette); // returns Blue pink
+```
+
+
 
 #### Demo https://advance-noteapd-v2.vercel.app/
 
 #### `Note: works only on material ui components!`
 
-##### `Please raise issue if you want add any feature like adding custom color palette or autocalculate secondary color.`
+#### Please raise issue if you want add any feature like adding custom color palette or autocalculate secondary color.
