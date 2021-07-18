@@ -1,3 +1,23 @@
+# react-material-ui-theme
+
+[![Build Status](https://travis-ci.org/mui-org/react-material-ui-theme.svg?branch=master)](https://travis-ci.org/mui-org/react-material-ui-theme)
+[![npm version](https://badge.fury.io/js/react-material-ui-theme.svg)](https://badge.fury.io/js/react-material-ui-theme)
+[![npm downloads](https://img.shields.io/npm/dm/react-material-ui-theme.svg)](https://img.shields.io/npm/dm/react-material-ui-theme.svg)
+[![npm](https://img.shields.io/npm/l/react-material-ui-theme.svg)](https://github.com/mui-org/react-material-ui-theme/blob/master/LICENSE)
+
+react-material-ui-theme is a part of the [Material-UI](http://www.material-ui.com/#/) theme to [React](https://facebook.github.io/react/). Using which you can add a Material-UI theme to your React app instantly without an extra build efforts. It will provide you theme toggle button to change dark and light theme and also can switch color theme. It use locolstorage to remember last theme and color of site
+
+## Installation
+
+```
+npm install react-material-ui-theme --save
+  // or
+yarn add react-material-ui-theme
+```
+## Usage
+
+### You can apply theme to your any react material ui app in 2 easy steps
+
 ```javascript
 import AppThemeProvider, {
   ThemeColorPalette,
@@ -6,7 +26,6 @@ import AppThemeProvider, {
 } from "react-material-ui-theme";
 ```
 
-### It use locolstorage to remember last theme and color of site. You can apply theme to your any react material ui app in 2 easy steps
 
 1. Wrap your component with `AppThemeProvider`
 
