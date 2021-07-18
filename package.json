@@ -1,6 +1,6 @@
 {
   "name": "react-material-ui-theme",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Add multicolor and dark theme to your react material ui project instantly.",
   "main": "dist/index.js",
   "scripts": {
